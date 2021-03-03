@@ -1,0 +1,25 @@
+.maquinaescribir {
+    margin: auto;
+    display: table;
+}
+
+h5 { 
+    position: relative; 
+    float: left;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+h5 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: #563d7c;
+    border-left: 2px solid black;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+} 
